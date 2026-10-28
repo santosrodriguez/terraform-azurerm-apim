@@ -1,0 +1,50 @@
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# SQL Server files
+*.mdf
+*.ldf
+*.bak
+*.sqlplan
+*.sqlquery
+
+# Visual Studio and C#
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.sln.ide/
+*.cache
+*.vspscc
+*.vssscc
+*.bak.*
+obj/
+[Bb]in/
+[Oo]ut/
+msvscc.*
+
+# .NET Core and .NET Framework
+**/Properties/launchSettings.json
+*.runtimeconfig.json
+*.runtimeconfig.dev.json
+*.deps.json
+*.exe
+*.dll
+*.pdb
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Docker
+*.env
+
+# Package Managers
+**/packages/*
+*.nupkg
+*.npm
+*.dll
+*.exe
+*.obj
