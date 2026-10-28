@@ -1,0 +1,18 @@
+name: Publish APIM module
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*.*.*'    # v1.0.0, v1.1.0, etc.
+
+jobs:
+  publish:
+    uses: CareSourceIT/CPD-Terraform-InfrastructureManagement/.github/workflows/publish_terraform_module_to_artifactory.yml@v1.4.0
+    with:
+      module_path: '.'          # or "storage-blob" if module lives in a subfolder
+      module_namespace: integration    # Options:  data, network, ai, database, compute, security, observability
+      module_provider: azurerm
+      # tag: v1.0.0            # optional override, normally not needed
+    secrets: inherit
+
